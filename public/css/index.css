@@ -1,0 +1,298 @@
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+::selection{
+    background: white;
+    color: black;
+}
+
+::-webkit-scrollbar{
+    width:4px;
+    height:12px;
+}
+
+::-webkit-scrollbar-track{
+       background-color: white;
+    border-radius: 38px;
+
+}
+::-webkit-scrollbar-thumb{
+      background-color: #2ad02a;
+    border-radius: 20px;
+
+}
+
+
+.main{
+	display: grid;
+	place-items:center;
+	background-color: #dadbd3;
+	height: 100vh;
+
+}
+
+
+.container{
+	display: flex;
+	background-color: #ededed;
+	margin-top: -50px;
+	height: 90vh;
+	width: 90vw;
+	box-shadow: -1px 4px 20px -6px rgba(0,0,0,0.3);
+}
+
+.sidebar{
+    flex: 0.24;
+    display: flex;
+    flex-direction: column;
+    background-color: #fbfbfb;
+}
+.sidebar_search{
+    display: flex;
+    align-items: center;
+    margin: 5px 0px;
+    padding: 8px 2px;
+    background-color: white;
+}
+.sidebar_search_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.sidebar_search_image img{
+    height: 33px;
+    width: 22px;
+}
+.sidebar_search_input{
+    flex: 1;
+}
+.sidebar_search_input input{
+	    width: 98%;
+    height: 33px;
+    border: none;
+    outline: none;
+    padding: 0px 2px;
+    font-family: system-ui;
+    font-weight: 600;
+    text-align: center;
+    background-color: #f3f1f1;
+}
+
+.sidebar_add_chat{
+	    text-align: center;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: white;
+}
+
+.sidebar_chat_person{
+    height: 100%;
+    overflow: scroll;
+}
+
+.sidebar_chat_box{
+        display: flex;
+    height: 48px;
+    margin: 4px 3px;
+}
+
+.sidebar_chat_box_image{
+	
+}
+
+
+.sidebar_chat_box_image img{
+	width: 50px;
+    height: 46px;
+    border-radius: 77px;
+}
+
+.sidebar_chat_box_data{
+    margin-left: 11px;
+    display: grid;
+    place-content: center;
+}
+
+.sidebar_chat_box_data h2{
+	font-family: sans-serif;
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+.chat{
+	flex:1;
+	display: flex;
+	flex-direction: column;
+}
+
+.chat_header{
+	background-color: #f3f1f1;
+}
+
+.chat_box{
+        display: flex;
+    height: 48px;
+    margin: 4px 3px;
+}
+
+.chat_box_image{
+	
+}
+
+
+.chat_box_image img{
+	width: 50px;
+    height: 46px;
+    border-radius: 77px;
+}
+
+.chat_box_data{
+    margin-left: 11px;
+    display: grid;
+    place-content: center;
+}
+
+.chat_box_data h2{
+	font-family: sans-serif;
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+
+.chat_main{
+flex: 1;
+    overflow: scroll;
+}
+
+.chat_input{
+    display: flex;
+    align-items: center;
+    padding: 8px 0px;
+}
+
+.chat_input form{
+    display: flex;
+    width: 100%;
+    margin: 1px 11px;
+}
+
+.chat_input_input{
+flex: 1;
+}
+.chat_input_input input{
+    width: 99%;
+    height: 31px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border: none;
+}
+.chat_input_button{
+display: flex;
+}
+.chat_input_button button{
+    width: 41px;
+    border: none;
+    color: white;
+    background-color: green;
+}
+
+
+.chat_text{
+    width: fit-content;
+    display: flex;
+    
+    margin: 12px 14px;
+    padding: 9px 6px;
+    flex-direction: column;
+    border-radius: 10px;
+    
+    clear: both;
+}
+
+.chat_text_green{
+	background-color: #dcf8c7;
+	color: black;
+	float: right;
+}
+.chat_text_white{
+	background-color: white;
+	color: black;
+	float: left;
+}
+
+
+.chat_text_text{
+font-family: system-ui;
+    font-weight: 500;
+}
+
+
+.chat_text_time{
+	text-align: end;
+    font-size: 0.8rem;
+    font-family: system-ui;
+}
+
+
+.copy{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 7px;
+    font-family: system-ui;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 4px 3px;
+}
+
+.delete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete img{
+width: 20px;
+    height: 20px;
+}
+
+
+.hamburger{
+    width: 44px;
+    height: 39px;
+    margin: 1px 9px;
+    display:none;
+}
+
+.hamburger-child{
+        border: 2px solid black;
+    margin-top: 7px;
+}
+
+.sidebar_search_cross{
+    width: 32px;
+    height: 32px;
+    display:none;
+}
+.sidebar_cross_child{
+      width: 28px;
+    border: 2px solid;  
+}
+
+
+
+
+
+
+
+
