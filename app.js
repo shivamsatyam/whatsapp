@@ -31,7 +31,7 @@ app.use(express.static(static_path))
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json())
 
-mongoose.connect('mongodb://localhost:27017/whatsapp',{useNewUrlParser:true,useUnifiedTopology:true,useFindAndModify:false,useCreateIndex:true}).then(()=>{
+mongoose.connect('mongodb+srv://shivamsatyam:shivamsatyam123@cluster0.hrigk.mongodb.net/shivamwhatsapp?retryWrites=true&m=majority',{useNewUrlParser:true,useUnifiedTopology:true,useFindAndModify:false,useCreateIndex:true}).then(()=>{
 	console.log('the connection is succesfully established')
 })
 
